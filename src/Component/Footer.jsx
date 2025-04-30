@@ -2,10 +2,21 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <div className='bg-black text-white py-16 mt-3 text-center'>
-      <h3 className='text-4xl font-semibold'>Welcome to the Footer Section</h3>
-      <p className='mt-4 text-lg text-gray-300'>This is a short description or tagline.</p>
-    </div>
+    <footer className="bg-black text-white px-6 py-12 mt-24">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+        <h2 className="text-2xl font-bold">Owais</h2>
+
+        <ul className="flex flex-col md:flex-row gap-4 text-gray-300 text-sm md:text-base">
+          <li className="hover:text-white cursor-pointer">Home</li>
+          <li className="hover:text-white cursor-pointer">About</li>
+          <li className="hover:text-white cursor-pointer">Contact</li>
+        </ul>
+      </div>
+
+      <div className="text-center text-gray-500 text-sm mt-10">
+        © {new Date().getFullYear()} Owais. All rights reserved.
+      </div>
+    </footer>
   );
 };
 
